@@ -38,6 +38,11 @@ const FILE_TYPE_MAP: Record<string, "pdf" | "docx" | "txt"> = {
   "text/plain": "txt",
 };
 
+// GET - Health check for proxy / iframe
+export async function GET() {
+  return NextResponse.json({ status: "ok", configured: !!LYZR_API_KEY });
+}
+
 // POST - List documents (JSON body) or Upload and train (formData)
 export async function POST(request: NextRequest) {
   try {

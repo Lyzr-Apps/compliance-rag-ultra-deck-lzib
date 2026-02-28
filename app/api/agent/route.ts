@@ -115,6 +115,13 @@ function normalizeResponse(parsed: any): NormalizedAgentResponse {
 }
 
 /**
+ * GET /api/agent — health check for proxy / iframe
+ */
+export async function GET() {
+  return NextResponse.json({ status: 'ok', configured: !!LYZR_API_KEY })
+}
+
+/**
  * POST /api/agent
  *
  * Two modes, both POST:

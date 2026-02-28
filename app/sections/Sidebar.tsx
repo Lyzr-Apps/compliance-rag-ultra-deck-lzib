@@ -51,7 +51,11 @@ export default function Sidebar({ selectedMode, onModeChange, isMobileOpen, onMo
   }, [])
 
   useEffect(() => {
-    fetchDocs()
+    // Small delay to let the app fully hydrate before fetching
+    const timer = setTimeout(() => {
+      fetchDocs()
+    }, 500)
+    return () => clearTimeout(timer)
   }, [fetchDocs])
 
   const handleUpload = async (file: File) => {
