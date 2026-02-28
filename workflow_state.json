@@ -1,0 +1,23 @@
+{
+  "manager": {
+    "name": "Compliance Coordinator",
+    "agent_id": "69a2714071a7effa8577bfe0"
+  },
+  "sub_agents": [
+    {
+      "name": "Document Retrieval Agent",
+      "agent_id": "69a27116ad98307a3fb278d4",
+      "has_kb": true,
+      "rag_id": "69a270f6f572c99c0ffbe5ab"
+    },
+    {
+      "name": "Compliance Analysis Agent",
+      "agent_id": "69a2712a24f2adeb72b9fd0e"
+    }
+  ],
+  "knowledge_base": {
+    "name": "Compliance Documents KB",
+    "rag_id": "69a270f6f572c99c0ffbe5ab",
+    "rag_name": "compliancedocumentskbi582"
+  }
+}

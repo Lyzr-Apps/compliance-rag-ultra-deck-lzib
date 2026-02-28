@@ -1,0 +1,94 @@
+{
+  "agent_name": "Compliance Coordinator",
+  "agent_id": "69a2714071a7effa8577bfe0",
+  "description": "Routes compliance queries to appropriate sub-agents based on query type (retrieval, cross-reference, gap analysis, risk assessment, checklist). Aggregates sub-agent outputs into a single structured, cited, plain-language response.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "summary": "string",
+    "query_type": "string",
+    "citations": [
+      {
+        "framework": "string",
+        "section": "string",
+        "excerpt": "string",
+        "relevance": "string"
+      }
+    ],
+    "analysis": {
+      "detailed_explanation": "string",
+      "cross_references": [
+        {
+          "framework_a": "string",
+          "framework_b": "string",
+          "overlap": "string",
+          "unique_to_a": "string",
+          "unique_to_b": "string"
+        }
+      ],
+      "risk_items": [
+        {
+          "risk": "string",
+          "severity": "string",
+          "impact": "string",
+          "remediation": "string"
+        }
+      ],
+      "checklist_items": [
+        {
+          "item": "string",
+          "category": "string",
+          "status": "string",
+          "priority": "string"
+        }
+      ]
+    },
+    "recommendations": [
+      "string"
+    ]
+  },
+  "example_response": {
+    "summary": "sample string",
+    "query_type": "sample string",
+    "citations": [
+      {
+        "framework": "sample string",
+        "section": "sample string",
+        "excerpt": "sample string",
+        "relevance": "sample string"
+      }
+    ],
+    "analysis": {
+      "detailed_explanation": "sample string",
+      "cross_references": [
+        {
+          "framework_a": "sample string",
+          "framework_b": "sample string",
+          "overlap": "sample string",
+          "unique_to_a": "sample string",
+          "unique_to_b": "sample string"
+        }
+      ],
+      "risk_items": [
+        {
+          "risk": "sample string",
+          "severity": "sample string",
+          "impact": "sample string",
+          "remediation": "sample string"
+        }
+      ],
+      "checklist_items": [
+        {
+          "item": "sample string",
+          "category": "sample string",
+          "status": "sample string",
+          "priority": "sample string"
+        }
+      ]
+    },
+    "recommendations": [
+      "sample string"
+    ]
+  }
+}
